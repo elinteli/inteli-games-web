@@ -77,7 +77,7 @@ h1:not(.juegos h1):not(.contacto h1) {
   font-size: 60px;
 }
 .inicio-lf {
-  background-image: url("../../fondo-section-lf.png");
+  background-image: url("img/fondo-section-lf.png");
   background-size: cover;
   color: #fff;
   height: 105vh;
