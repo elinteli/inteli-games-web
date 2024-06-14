@@ -4,7 +4,7 @@ import images from './utils/importImages';
 import articulos from './utils/importArticulos';
 
 
-function Inicio() {
+export default function Inicio() {
     useEffect(() => {
       let articuloSugerido1;
       let articuloSugerido2;
