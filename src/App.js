@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import React from 'react';
-import { createBrowserRouter, RouterProvider, Route, Link, useParams, createHashRouter } from 'react-router-dom';
+import { RouterProvider, createHashRouter } from 'react-router-dom';
 import './App.css';
 import Noticia from './Noticia';
 import Contacto from './Contacto';
