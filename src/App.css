@@ -317,9 +317,9 @@ iframe {
 
 @font-face {
   font-family: 'Extenda';
-  src: url("../../Extenda-80-Peta.ttf");
+  src: url("/src/fonts/Extenda-80-Peta.ttf");
 }
 @font-face {
   font-family: 'Noto Sans';
-  src: url("../../NotoSans-Regular.ttf");
+  src: url("/src/fonts/NotoSans-Regular.ttf");
 }
