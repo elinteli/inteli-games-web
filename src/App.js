@@ -7,7 +7,7 @@ import images from './utils/importImages';
 import articulos from './utils/importArticulos';
 
 // Componente principal de la aplicación
-function App() {
+export default function App() {
   useEffect(() => {
     let articuloSugerido1;
     let articuloSugerido2;
