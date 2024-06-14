@@ -1,12 +1,8 @@
 import { useEffect } from 'react';
 import React from 'react';
-import { createBrowserRouter, RouterProvider, Route, Link, useParams, createHashRouter } from 'react-router-dom';
+import { createRoot } from 'react-dom/client';
+import Root from './Root';
 import './App.css';
-import Noticia from './Noticia';
-import Contacto from './Contacto';
-import Juegos from './Juegos';
-import Novedades from './Novedades';
-import NotFound from './NotFound';
 import images from './utils/importImages';
 import articulos from './utils/importArticulos';
 
@@ -148,38 +144,10 @@ function App() {
 }
 
 // Configuración del router
-const router = createHashRouter([
-  {
-    path: "/",
-    element: <App />,
-  },
-  {
-    path: "/articulo/:nombre",
-    element: <Noticia />
-  },
-  {
-    path: "/contacto",
-    element: <Contacto />
-  },
-  {
-    path: "/juegos",
-    element: <Juegos />
-  },
-  {
-    path: "/novedades",
-    element: <Novedades />
-  },
-  {
-    path: "*",
-    element: <NotFound />
-  }
-]);
-
-function Root() {
-  return (
-    <RouterProvider router={router} />
-  );
-}
-
-export default Root;
-
+const container = document.getElementById('root');
+const root = createRoot(container);
+root.render(
+  <React.StrictMode>
+    <Root />
+  </React.StrictMode>
+);
