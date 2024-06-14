@@ -45,13 +45,13 @@ header {
   font-size: calc(16px*0.95);
   box-shadow: 0 0 #0000,0 0 #0000,0 0 #0000,0 0 #0000,0 20px 25px -5px rgba(0,0,0,.1),0 8px 10px -6px rgba(0,0,0,.1);
 }
-.header a {
+.header Link {
   padding: 0 calc(12px*0.95);
   display: flex;
   justify-content: center;
   height: fit-content;
 }
-.header a:hover {
+.header Link:hover {
   opacity: .8;
 }
 h1,h2 {

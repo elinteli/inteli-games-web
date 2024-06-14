@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import React from 'react';
-import { RouterProvider, createHashRouter } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider, Route, Link, useParams, createHashRouter, BrowserRouter, Routes } from 'react-router-dom';
 import './App.css';
 import Noticia from './Noticia';
 import Contacto from './Contacto';
@@ -76,15 +76,25 @@ function App() {
 })
   return (
 <article class="main">
+        <BrowserRouter>
         <header>
             <div class="header">
-                <a href="/" class="header__icon"><img src={images["icono.png"]} alt="Icono Inteli Games" /></a>
-                <a href="/novedades/">Novedades</a>
-                <a href="/juegos/">Juegos</a>
-                <a href="/contacto/">Contacto</a>
+                <Link to="/" class="header__icon"><img src={images["icono.png"]} alt="Icono Inteli Games" /></Link>
+                <Link to="/novedades/">Novedades</Link>
+                <Link to="/juegos/">Juegos</Link>
+                <Link to="/contacto/">Contacto</Link>
             </div>
         </header>
-        <section class="inicio-lf">
+        <Routes>
+            <Route path="/" element={<div>Inicio</div>} />
+            <Route path="/articulo/:nombre" element={<div>Articulo</div>} />
+            <Route path="/contacto" element={<div>contacto</div>} />
+            <Route path="/juegos" element={<div>juegos</div>} />
+            <Route path="/novedades" element={<div>novedades</div>} />
+            <Route path="*" element={<div>404</div>} />
+        </Routes>
+        </BrowserRouter>
+        {/* <section class="inicio-lf">
             <div class="inicio-lf__block1">
                 <h1>
                     <p>Letras<br/>Fugitivas</p>
@@ -136,7 +146,7 @@ function App() {
                     <span id="articulo-sugerido3-desc"></span>
                 </a>
             </div>
-        </section>
+        </section> */}
         <footer class="footer">
         <p>
                 {new Date().getFullYear()} Inteli Games. Todos los derechos
@@ -146,40 +156,4 @@ function App() {
     </article>
   );
 }
-
-// Configuración del router
-const router = createHashRouter([
-  {
-    path: "/",
-    element: <App />,
-  },
-  {
-    path: "/articulo/:nombre",
-    element: <Noticia />
-  },
-  {
-    path: "/contacto",
-    element: <Contacto />
-  },
-  {
-    path: "/juegos",
-    element: <Juegos />
-  },
-  {
-    path: "/novedades",
-    element: <Novedades />
-  },
-  {
-    path: "*",
-    element: <NotFound />
-  }
-]);
-
-function Root() {
-  return (
-    <RouterProvider router={router} />
-  );
-}
-
-export default Root;
 
