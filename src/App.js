@@ -16,10 +16,10 @@ export default function App() {
             <BrowserRouter>
                 <header>
                     <div class="header">
-                        <Link to="/" class="header__icon header__link"><img src={imgIcono} alt="Icono Inteli Games" /></Link>
-                        <Link to="/novedades/" class="header__link">Novedades</Link>
-                        <Link to="/juegos/" class="header__link">Juegos</Link>
-                        <Link to="/contacto/" class="header__link">Contacto</Link>
+                        <Link to="/" class="header__icon header__link" onClick={window.location.reload()}><img src={imgIcono} alt="Icono Inteli Games" /></Link>
+                        <Link to="/novedades/" class="header__link" onClick={window.location.reload()}>Novedades</Link>
+                        <Link to="/juegos/" class="header__link" onClick={window.location.reload()}>Juegos</Link>
+                        <Link to="/contacto/" class="header__link" onClick={window.location.reload()}>Contacto</Link>
                     </div>
                 </header>
                 <Routes>
