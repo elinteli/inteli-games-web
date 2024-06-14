@@ -86,15 +86,7 @@ export default function App() {
             </div>
         </header>
         <Routes>
-            <Route path="/" element={<div>Inicio</div>} />
-            <Route path="/articulo/:nombre" element={<div>Articulo</div>} />
-            <Route path="/contacto" element={<div>contacto</div>} />
-            <Route path="/juegos" element={<div>juegos</div>} />
-            <Route path="/novedades" element={<div>novedades</div>} />
-            <Route path="*" element={<div>404</div>} />
-        </Routes>
-        </BrowserRouter>
-        {/* <section class="inicio-lf">
+            <Route path="/" element={<div><section class="inicio-lf">
             <div class="inicio-lf__block1">
                 <h1>
                     <p>Letras<br/>Fugitivas</p>
@@ -146,7 +138,14 @@ export default function App() {
                     <span id="articulo-sugerido3-desc"></span>
                 </a>
             </div>
-        </section> */}
+        </section></div>} />
+            <Route path="/articulo/:nombre" element={<div>Articulo</div>} />
+            <Route path="/contacto" element={<div>contacto</div>} />
+            <Route path="/juegos" element={<div>juegos</div>} />
+            <Route path="/novedades" element={<div>novedades</div>} />
+            <Route path="*" element={<div>404</div>} />
+        </Routes>
+        </BrowserRouter>
         <footer class="footer">
         <p>
                 {new Date().getFullYear()} Inteli Games. Todos los derechos
