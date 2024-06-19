@@ -12,6 +12,8 @@ export default function Juegos() {
         cargarArticulos();
         async function cargarArticulos() {
             try {
+                document.title = "Juegos y Herramientas - Inteli Games";
+
                 articulosTodoslista = ["letras-fugitivas.json", "anotador-de-truco-uruguayo.json"];
                 articuloSugerido1 = articulos[articulosTodoslista[0]];
                 document.getElementById("articulo-sugerido1-titulo").innerHTML = articuloSugerido1.nombre;

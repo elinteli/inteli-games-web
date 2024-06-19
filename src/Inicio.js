@@ -14,6 +14,7 @@ export default function Inicio() {
         cargarArticulos();
         async function cargarArticulos() {
             try {
+                document.title = "Inteli Games - Juegos y Herramientas móviles";
                 articulosTodoslista = Object.keys(articulos);
 
                 articulosTodoslista.splice(articulosTodoslista.indexOf("letras-fugitivas.json"), 1);

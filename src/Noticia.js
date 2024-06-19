@@ -8,7 +8,6 @@ export default function Noticia() {
     let { nombre } = useParams();
     useEffect(() => {
         let articuloMain;
-        let data;
         let articuloSugerido1;
         let articuloSugerido2;
         let articuloSugerido3;

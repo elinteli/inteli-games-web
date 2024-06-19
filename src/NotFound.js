@@ -13,6 +13,7 @@ export default function NotFound() {
         cargarArticulos();
         async function cargarArticulos() {
             try {
+                document.title = "Página no encontrada (Error 404)";
                 articulosTodoslista = Object.keys(articulos);
 
                 articulosTodoslista.splice(articulosTodoslista.indexOf("letras-fugitivas.json"), 1);

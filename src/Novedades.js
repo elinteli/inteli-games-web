@@ -13,6 +13,7 @@ export default function Novedades() {
         cargarArticulos();
         async function cargarArticulos() {
             try {
+                document.title = "Novedades - Inteli Games";
                 articulosTodoslista = Object.keys(articulos);
 
                 articulosTodoslista.splice(articulosTodoslista.indexOf("letras-fugitivas.json"), 1);

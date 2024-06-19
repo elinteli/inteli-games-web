@@ -1,7 +1,11 @@
 import React from 'react';
+import { useEffect } from 'react';
 
 
 export default function Contacto() {
+    useEffect(() => { 
+        document.title = "Contacto - Inteli Games";
+    });
     return <section class="contacto">
         <div class="contacto__block1">
             <h1>Contacto</h1>
