@@ -36,6 +36,7 @@ header {
   width: 100vw;
   justify-content: center;
   padding-top: calc(16px*0.95);
+  z-index: 8000;
 }
 .header {
   display: flex;
