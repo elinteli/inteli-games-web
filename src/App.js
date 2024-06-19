@@ -1,4 +1,5 @@
 import React from 'react';
+import { useEffect } from 'react';
 import { Route, Link, BrowserRouter, Routes } from 'react-router-dom';
 import './App.css';
 import Inicio from './Inicio';
@@ -11,6 +12,12 @@ import imgIcono from './img/icono.png';
 
 // Componente principal de la aplicación
 export default function App() {
+    useEffect(() => {
+        window.scroll(0, 0);
+        document.querySelector("header").addEventListener("click", function () {
+            window.scroll(0, 0);
+        });
+    })
     return (
         <article class="main">
             <BrowserRouter>
