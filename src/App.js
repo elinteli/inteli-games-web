@@ -13,9 +13,20 @@ import imgIcono from './img/icono.png';
 // Componente principal de la aplicación
 export default function App() {
     useEffect(() => {
-        window.scroll(0, 0);
-        document.querySelector("header").addEventListener("click", function () {
+        document.querySelector(".header").addEventListener("click", function () {
             window.scroll(0, 0);
+        });
+        document.querySelector(".header-movil").addEventListener("click", function () {
+            document.querySelector(".header-movil").classList.remove("true");
+            document.getElementById("menu-btn-input").checked = false;
+        });
+        document.getElementById("menu-btn-input").addEventListener("change", function () {
+            if (document.getElementById("menu-btn-input").checked) {
+                document.querySelector(".header-movil").classList.add("true");
+            }
+            else {
+                document.querySelector(".header-movil").classList.remove("true");
+            }
         });
     })
     return (
@@ -27,6 +38,17 @@ export default function App() {
                         <Link to="/novedades/" class="header__link">Novedades</Link>
                         <Link to="/juegos/" class="header__link">Juegos</Link>
                         <Link to="/contacto/" class="header__link">Contacto</Link>
+                        <label class="menu-btn" for="menu-btn-input">
+                            <input id="menu-btn-input" type="checkbox" class="hidden" />
+                                <span class="menu-btn__uno"></span>
+                                <span class="menu-btn__dos"></span>
+                                <span class="menu-btn__tres"></span>
+                        </label>
+                    </div>
+                    <div class="header-movil">
+                        <Link to="/novedades/" class="header-movil__link">Novedades</Link>
+                        <Link to="/juegos/" class="header-movil__link">Juegos</Link>
+                        <Link to="/contacto/" class="header-movil__link">Contacto</Link> 
                     </div>
                 </header>
                 <Routes>

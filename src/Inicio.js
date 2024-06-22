@@ -71,7 +71,7 @@ export default function Inicio() {
     return <div>
         <section class="inicio-lf">
             <div class="inicio-lf__block1">
-                <h1>
+                <h1 class="titulo-main">
                     <p>Letras<br />Fugitivas</p>
                 </h1>
                 <p class="inicio-lf__tag">NUEVO</p>
@@ -87,7 +87,7 @@ export default function Inicio() {
         </section>
         <section class="trucouy">
             <div class="trucouy__block1">
-                <h2>Anotador de<br />Truco Uruguayo</h2>
+                <h2>Anotador de Truco Uruguayo</h2>
                 <p class="trucouy__tag">Herramienta Online</p>
                 <div>
                     <p class="trucouy__about">
