@@ -80,9 +80,9 @@ export default function Inicio() {
                     Completá palabras con una letra faltante en común en tiempo límite.<br />
                     Superá niveles, ganá puntos, evitá errores y disfrutá del desafío diario.
                 </p>
-                <div class="inicio-lf__block2"><a class="inicio-lf__btn1"
-                    href="https://inteligames.itch.io/letras-fugitivas" target="_blank">Jugar</a><a
-                        href="/articulo/letras-fugitivas" class="inicio-lf__btn2">Más Info</a></div>
+                <div class="inicio-lf__block2">
+                    {/* <a class="inicio-lf__btn1"href="https://inteligames.itch.io/letras-fugitivas" target="_blank">Jugar</a> */}
+                    <a href="/articulo/letras-fugitivas" class="inicio-lf__btn2">Más Info</a></div>
             </div>
         </section>
         <section class="trucouy">
