@@ -168,6 +168,7 @@ button:hover,
   background-position: top;
   color: #fff;
   height: 100vh;
+  min-height: fit-content;
 }
 
 .inicio-lf {
