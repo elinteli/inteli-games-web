@@ -458,7 +458,10 @@ iframe {
   display: flex;
 }
 
-.inicio-lf__btn1 {
+/*.inicio-lf__btn1 {
+  margin-left: 0;
+}*/
+.inicio-lf__btn2 {
   margin-left: 0;
 }
 

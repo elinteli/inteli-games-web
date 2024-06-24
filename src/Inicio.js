@@ -76,23 +76,21 @@ export default function Inicio() {
                 </h1>
                 <p class="inicio-lf__tag">NUEVO</p>
                 <p class="inicio-lf__about">
-                    ¡Desafía tu mente en 'Letras Fugitivas'!<br />
-                    Completá palabras con una letra faltante en común en tiempo límite.<br />
-                    Superá niveles, ganá puntos, evitá errores y disfrutá del desafío diario.
+                    ¡Encontrá la letra fugitiva! Sumergite en el <b>nuevo desafío de palabras</b>. Este juego no solo entretiene, sino que también <b>ejercita tu mente y mejora tu vocabulario</b>. <br />
                 </p>
                 <div class="inicio-lf__block2">
                     {/* <a class="inicio-lf__btn1"href="https://inteligames.itch.io/letras-fugitivas" target="_blank">Jugar</a> */}
-                    <a href="/articulo/letras-fugitivas" class="inicio-lf__btn2">Más Info</a></div>
+                    <a href="/articulo/letras-fugitivas" class="inicio-lf__btn2">Descubre Más</a></div>
             </div>
         </section>
         <section class="trucouy">
             <div class="trucouy__block1">
-                <h2>Anotador de Truco Uruguayo</h2>
+                <h2>Otras herramientas</h2>
                 <p class="trucouy__tag">Herramienta Online</p>
                 <div>
                     <p class="trucouy__about">
                         Anotador de truco uruguayo para contar los puntos de las partidas.<br />
-                        Práctico, Rápido y Facil.
+                        <b>Práctico, Rápido y Facil</b>.
                     </p>
                     <iframe src='https://anotador-de-truco.netlify.app/web-inteli-games-iframe.html' id="iframeAnotTruc" allow='fullscreen'></iframe>
                 </div>
