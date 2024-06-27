@@ -6,6 +6,32 @@ import articulos from './utils/importArticulos';
 
 export default function Inicio() {
     useEffect(() => {
+        let solucionPuzzle1 = false;
+        document.getElementById("boton-solucion-puzzle1").addEventListener("click", function () {
+            if (!solucionPuzzle1) {
+                document.getElementById("lf-puzzle-1__tabla").innerHTML = document.getElementById("lf-puzzle-1__tabla").innerHTML.replace(/_/g, "<b>e</b>");
+                document.getElementById("boton-solucion-puzzle1").innerHTML = "Ocultar Solución";
+                solucionPuzzle1 = true;
+            }
+            else {
+                document.getElementById("lf-puzzle-1__tabla").innerHTML = document.getElementById("lf-puzzle-1__tabla").innerHTML.replace(/<b>e<\/b>/g, "_");
+                document.getElementById("boton-solucion-puzzle1").innerHTML = "Mostrar Solución";
+                solucionPuzzle1 = false;
+            }
+        });
+        let solucionPuzzle2 = false;
+        document.getElementById("boton-solucion-puzzle2").addEventListener("click", function () {
+            if (!solucionPuzzle2) {
+                document.getElementById("lf-puzzle-2__tabla").innerHTML = document.getElementById("lf-puzzle-2__tabla").innerHTML.replace(/_/g, "<b>t</b>");
+                document.getElementById("boton-solucion-puzzle2").innerHTML = "Ocultar Solución";
+                solucionPuzzle2 = true;
+            }
+            else {
+                document.getElementById("lf-puzzle-2__tabla").innerHTML = document.getElementById("lf-puzzle-2__tabla").innerHTML.replace(/<b>t<\/b>/g, "_");
+                document.getElementById("boton-solucion-puzzle2").innerHTML = "Mostrar Solución";
+                solucionPuzzle2 = false;
+            }
+        });
         let articuloSugerido1;
         let articuloSugerido2;
         let articuloSugerido3;
@@ -82,6 +108,36 @@ export default function Inicio() {
                     {/* <a class="inicio-lf__btn1"href="https://inteligames.itch.io/letras-fugitivas" target="_blank">Jugar</a> */}
                     <a href="/articulo/letras-fugitivas" class="inicio-lf__btn2">Descubre Más</a></div>
             </div>
+        </section>
+        <section class="lf-puzzle-1">
+            <div class="texto-lf-puzzle">
+                <h2>¿Qué única letra completa las palabras?</h2>
+                <button id='boton-solucion-puzzle1'>Mostrar Solución</button>
+            </div>
+            <ul class="tabla-lf-puzzle" id='lf-puzzle-1__tabla'>
+                <li class="palabra-lf-puzzle">pi_za</li>
+                <li class="palabra-lf-puzzle">tar_a</li>
+                <li class="palabra-lf-puzzle">fi_sta</li>
+                <li class="palabra-lf-puzzle">muert_</li>
+                <li class="palabra-lf-puzzle">c_na</li>
+            </ul>
+        </section>
+        <section class="lf-puzzle-2">
+            <div class="texto-lf-puzzle texto-lf-puzzle-alt">
+                <h2>¿Y aquí que letra es?</h2>
+                <button id='boton-solucion-puzzle2'>Mostrar Solución</button>
+            </div>
+            <ul class="tabla-lf-puzzle" id='lf-puzzle-2__tabla'>
+                <li class="palabra-lf-puzzle">_ubo</li>
+                <li class="palabra-lf-puzzle">pa_o</li>
+                <li class="palabra-lf-puzzle">_echo</li>
+                <li class="palabra-lf-puzzle">_abla</li>
+                <li class="palabra-lf-puzzle">cua_ro</li>
+            </ul>
+        </section>
+        <section class="lf-download">
+            <h2>Desafía tu mente, compite y gana con cada palabra</h2>
+            <a class="button" href="https://inteligames.itch.io/letras-fugitivas">Descargar</a>
         </section>
         <section class="trucouy">
             <div class="trucouy__block1">

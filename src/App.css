@@ -139,10 +139,22 @@ button,
   max-width: 80%;
 }
 
+button:active,
+.button:active,
+.inicio-lf__btn1:active,
+.inicio-lf__btn2:active,
+.contacto__input--submit:active,
+.page-not-found__btn-home:active,
+.articulo__btn:active {
+  transform: translateY(4px);
+}
+
 button:hover,
+.button:hover,
 .inicio-lf__btn1:hover,
 .inicio-lf__btn2:hover,
-.page-not-found__btn-home {
+.page-not-found__btn-home,
+.articulo__btn:hover {
   background-color: rgba(35, 50, 160, .8);
 }
 
@@ -184,15 +196,15 @@ button:hover,
 
 }
 
-.inicio-lf__block1  {
+.inicio-lf__block1 {
   padding: 0 var(--padding-left-content);
   padding-top: 15vh;
 }
 
-.trucouy__block1, .page-not-found__block1 {
+.trucouy__block1,
+.page-not-found__block1{
   padding-left: var(--padding-left-content);
   padding-top: 4.5rem;
-
 }
 
 .contacto__form {
@@ -434,6 +446,10 @@ iframe {
   top: -10px;
 }
 
+.articulo__tag {
+    color: #0006;
+}
+
 .articulo__tag-1 {
   color: #311f19;
 }
@@ -465,6 +481,89 @@ iframe {
   margin-left: 0;
 }
 
+.lf-puzzle-1,
+.lf-puzzle-2 {
+  background-color: #573f29;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2%;
+  padding-top: 4.5rem;
+  flex-wrap: wrap;
+}
+
+.lf-puzzle-2 {
+  padding-bottom: 4.5rem;
+  flex-direction: row-reverse;
+}
+
+.lf-download {
+  background-color: #311f19;
+  height: 30rem;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.lf-download h2 {
+  width: 30rem;
+}
+.lf-download a {
+  width: 27rem;
+}
+
+.lf-puzzle__img {
+  width: 23rem;
+}
+
+.texto-lf-puzzle {
+  max-width: 30rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.texto-lf-puzzle:last-child {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.tabla-lf-puzzle {
+  --size-puzzle-lf: 28.75rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, calc(0.16 * var(--size-puzzle-lf)));
+  width: calc(0.8 * var(--size-puzzle-lf));
+  background-image: url(./img/papel-con-rayas.png);
+  font-family: 'Caveat', cursive, sans-serif;
+  color: #00005e;
+  padding: 0;
+  font-weight: 100;
+  border-radius: calc(0.04 * var(--size-puzzle-lf));
+  list-style: none;
+}
+
+.palabra-lf-puzzle {
+  font-size: calc(0.12 * var(--size-puzzle-lf));
+  font-weight: bolder;
+  border-bottom: calc(0.004 * var(--size-puzzle-lf)) solid #00005e;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  line-height: 1.15;
+}
+
+.palabra-lf-puzzle b {
+  font-weight: bold;
+}
+
+.palabra-lf-puzzle:last-child {
+  border: 0;
+}
 
 /* Media Queries para pantallas chicas */
 @media (max-width: 750px) {
@@ -526,6 +625,19 @@ iframe {
 
   .novedades__noticias {
     flex-direction: column;
+  }
+  .texto-lf-puzzle {
+    align-items: center;
+    text-align: center;
+  }
+  .lf-download {
+    height: 20rem;
+  }
+  .lf-puzzle-1, .lf-puzzle-2 {
+    padding-bottom: 4rem;
+  }
+  .tabla-lf-puzzle {
+    --size-puzzle-lf: calc(80vw / 0.8);
   }
 }
 
