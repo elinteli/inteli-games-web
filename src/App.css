@@ -652,3 +652,9 @@ iframe {
   font-family: 'Noto Sans';
   src: url("/src/fonts/NotoSans-Regular.ttf");
 }
+
+/* Tipografía para puzzle LF */
+@font-face {
+  font-family: 'Caveat';
+  src: url("/src/fonts/Caveat-Regular.ttf");
+}
