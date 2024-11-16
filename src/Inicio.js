@@ -102,7 +102,7 @@ export default function Inicio() {
                 </h1>
                 <p class="inicio-lf__tag">NUEVO</p>
                 <p class="inicio-lf__about">
-                    ¡Encontrá la letra fugitiva! Sumergite en el <b>nuevo desafío de palabras</b>. Este juego no solo entretiene, sino que también <b>ejercita tu mente y mejora tu vocabulario</b>. <br />
+                    ¡Encontrá las letras fugitivas! Sumergite en el <b>nuevo desafío de palabras</b>. Este juego no solo entretiene, sino que también <b>ejercita tu mente y mejora tu vocabulario</b>. <br />
                 </p>
                 <div class="inicio-lf__block2">
                     {/* <a class="inicio-lf__btn1"href="https://inteligames.itch.io/letras-fugitivas" target="_blank">Jugar</a> */}
