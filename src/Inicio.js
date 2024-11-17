@@ -106,10 +106,10 @@ export default function Inicio() {
                 </p>
                 <div class="inicio-lf__block2">
                     {/* <a class="inicio-lf__btn1"href="https://inteligames.itch.io/letras-fugitivas" target="_blank">Jugar</a> */}
-                    <a href="/articulo/letras-fugitivas" class="inicio-lf__btn2">Descubre Más</a></div>
+                    <a href="#demo" class="inicio-lf__btn2">Descubre más</a></div>
             </div>
         </section>
-        <section class="lf-puzzle-1">
+        <section class="lf-puzzle-1" id='demo'>
             <div class="texto-lf-puzzle">
                 <h2>¿Qué única letra completa las palabras?</h2>
                 <button id='boton-solucion-puzzle1'>Mostrar Solución</button>
@@ -137,7 +137,7 @@ export default function Inicio() {
         </section>
         <section class="lf-download">
             <h2>Desafía tu mente, compite y gana con cada palabra</h2>
-            <a class="button" href="https://inteligames.itch.io/letras-fugitivas">Descargar</a>
+            <a href="/articulo/letras-fugitivas" class="button">Más Información</a>
         </section>
         <section class="trucouy">
             <div class="trucouy__block1">
