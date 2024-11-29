@@ -1,7 +1,7 @@
 const { SitemapStream, streamToPromise } = require('sitemap');
 const fs = require('fs');
 const path = require('path');
-const hostname = 'https://www.inteligames.netlify.app';
+const hostname = 'https://inteligames.netlify.app';
 
 // Función para leer todos los archivos JSON en la carpeta 'articulos'
 function getArticulos(dir) {
